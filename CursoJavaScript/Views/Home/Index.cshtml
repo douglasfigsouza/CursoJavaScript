@@ -1,4 +1,31 @@
-﻿<button onclick="viraLobos();" class="btn btn-danger">Vira Lobos</button>
-<div id="img-lobo">
-    <img src="~/Content/Imagens/Lobo.jpg" id="Lobo"/>
+﻿<div class="row"id="form">
+    <div class="col-md-6">
+        <form id="formulario">
+            <fieldset>
+                <legend class="text-center">Calcular IMC</legend>
+                <div class="row">
+                    <div class="col-md-4 form-group">
+                        <label for="kilos" class="control-label col-md-2">KG</label>
+                        <input type="number" class="col-md-2 form-control"name="kilos"/>
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <label for="metros" class="control-label col-md-2">Metros</label>
+                        <input type="number" class="col-md-2 form-control" name="metros" />
+                    </div>
+                    <div class="col-md-4 form-group">
+                        <label for="cm" class="control-label col-md-2">CM</label>
+                        <input type="number" class="col-md-2 form-control" name="cm" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button class="btn-block btn btn-primary" onclick="imc();">Calcular</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <h2 id="imc">Teste</h2>
+                </div>
+            </fieldset>
+        </form>
+    </div>
 </div>
